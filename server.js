@@ -21,6 +21,11 @@ mongoose.connection
 
 mongoose.set('strictQuery', true);
 
+// Middleware //
+app.use(cors()); // to prevent cors errors, open access to all origins
+app.use(morgan("dev")); // logging
+app.use(express.json()); // parse json bodies 
+
 // Models
 const Customer = require('./models/customer');
 const Menu = require('./models/menu');
