@@ -38,3 +38,5 @@ app.use('/shop', shopController)
 
 // Listening 
 app.listen(PORT, () => console.log('express is listening on:', PORT));
+
+console.log("Kiko's delivery service")
