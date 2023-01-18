@@ -2,16 +2,19 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// User Schema
+// Customer Schema
 const customerSchema = Schema({
+    first_name: String,
+    last_name: String,
     email: String,
+    phone: String,
     address: String,
     },  {
     timestamps: true
   });
 
-// User Model
+// Building Customer Model In MongoDB
 const Customer = mongoose.model('Customer', customerSchema);
 
-// Export User Model
+// Export Customer Model
 module.exports = Customer;
