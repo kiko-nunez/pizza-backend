@@ -2,15 +2,23 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// User Schema
+// Menu Schema
 const menuSchema = Schema({
-  email: String,
-  address: String,
+  
+  item: String,
+  description: String,
+  img: String,
+  price: String,
+
+  shop: {
+		type: Schema.Types.ObjectId,
+		ref: 'Shop',
+	},
   },  {
     timestamps: true
   });
 
-// User Model
+// Building Menu Model In MongoDB
 const Menu = mongoose.model('Menu', menuSchema);
 
 // Export User Model
