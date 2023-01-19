@@ -20,7 +20,7 @@ menuRouter.get('/seed', (req, res) => {
 menuRouter.get("/", async (req, res) => {
     try {
         // send all menus
-        res.json(await MMenu.find({}));
+        res.json(await Menu.find({}));
     } catch (error) {
         // send error
         res.status(400).json(error);
