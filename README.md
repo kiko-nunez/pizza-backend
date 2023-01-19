@@ -1,4 +1,4 @@
-![Logo](public/cheezus-logo.png)
+![Logo](https://i.imgur.com/ckLPBCK.png)
 # CheesUs: An app built for Pizza lovers to support local shops.
 ***
 ## Description
@@ -21,15 +21,15 @@ CheesUs is a food delivery app specifically designed to give customers a list of
 - Netlify
 ***
 ## Screenshots
-![erd](public/erd.png)
+![erd](https://i.imgur.com/hm1e517.png)
 <br>   
 
-![wireframe](public/wireframe.png)
+![wireframe](https://i.imgur.com/MYYT0ap.png)
 <br>
 ***
 ### Production version
 
-![production](https://i.imgur.com/ckLPBCK.png)
+![production](https://i.imgur.com/nUFNM9a.png)
 ***
 ## Deployed Website
 
