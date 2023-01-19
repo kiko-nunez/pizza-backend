@@ -5,6 +5,16 @@ const Customer = require('../models/customer.js');
 
 // Routes //
 
+// Seed
+const seed = require('../models/shopseed');
+userRouter.get('/seed', (req, res) => {
+    Customer.deleteMany({}, (error, allCustomers) => {});
+
+    Customer.create(seed, (error, data) => {
+        res.redirect('/');
+    });
+});
+
 // create a test route //
 userRouter.get("/", (req, res) => {
     res.send("hello world");
