@@ -35,6 +35,8 @@ const userController = require('./controllers/user');
 app.use('/', userController);
 const shopController = require('./controllers/shop');
 app.use('/shop', shopController)
+const menuController = require('./controllers/menu');
+app.use('/menu', menuController)
 
 // Listening 
 app.listen(PORT, () => console.log('express is listening on:', PORT));
