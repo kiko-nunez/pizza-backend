@@ -27,7 +27,7 @@ app.use(morgan("dev")); // logging
 app.use(express.json()); // parse json bodies 
 
 // Models
-const Customer = require('./models/customer');
+const Customer = require('./models/user');
 const Menu = require('./models/menu');
 
 // Controllers //

@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Customer Schema
-const customerSchema = Schema({
-  
+const userSchema = Schema({
+
     name: String,
     address: String,
     phone: String,
@@ -14,7 +14,7 @@ const customerSchema = Schema({
   });
 
 // Building Customer Model In MongoDB
-const Customer = mongoose.model('Customer', customerSchema);
+const User = mongoose.model('User', userSchema);
 
 // Export Customer Model
-module.exports = Customer;
+module.exports = User;
