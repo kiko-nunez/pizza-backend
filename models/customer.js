@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 
 // Customer Schema
 const customerSchema = Schema({
-    first_name: String,
-    last_name: String,
-    email: String,
-    phone: String,
+  
+    name: String,
     address: String,
+    phone: String,
+
     },  {
     timestamps: true
   });
