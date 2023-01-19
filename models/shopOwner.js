@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // Shop Schema
 const shopSchema = Schema({
     shop_name: String,
-    email: String,
+    img: String,
     phone: String,
     address: String,
     // not sure if this needs to be more detailed for api
