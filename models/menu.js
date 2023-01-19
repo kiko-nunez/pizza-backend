@@ -4,8 +4,13 @@ const Schema = mongoose.Schema;
 
 // User Schema
 const menuSchema = Schema({
-  email: String,
-  address: String,
+  item: String,
+  description: String,
+  price: String,
+  // shop: {
+	// 	type: Schema.Types.ObjectId,
+	// 	ref: 'Shop',
+	//   },
   },  {
     timestamps: true
   });
