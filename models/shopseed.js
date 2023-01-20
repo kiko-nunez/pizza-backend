@@ -9,7 +9,7 @@ module.exports = [
     },
     {
         name: 'San Remo Pizzeria & Restaurant',
-        image: 'https://i.imageur.com/hsMco5R.png',
+        image: 'https://i.ibb.co/wSCjh4V/sanremo.png',
         phone: '347-754-3941',
         address: '1408 Cortelyou Rd, Brooklyn, NY 11226',
         
@@ -23,28 +23,28 @@ module.exports = [
     },
     {
         name: 'Artichoke Basilles Pizza',
-        image: 'https://i.imageur.com/uWyAOsx.png',
+        image: 'https://i.ibb.co/Npj39HK/Artichoke-Basille-s-Pizza.jpg',
         phone: '212-228-2004',
         address: '321 E 14th St, New York, NY 10003',
         
     },
     {
         name: 'Anna Maria Pizza & Pasta',
-        image: 'https://i.imageur.com/E2QWcCH.png',
+        image: 'https://i.ibb.co/d4DcWPW/annamaria.jpg',
         phone: '718-599-4550',
         address: '179 Bedford Ave, Brooklyn, NY 11211',
         
     },
     {
         name: 'Stromboli Pizza',
-        image: 'https://i.imageur.com/3E0lvKq.png',
+        image: 'https://i.ibb.co/YbCBfrF/strombolii.png',
         phone: '212-673-3691',
         address: '83 St Marks Pl, New York, NY 10003',
         
     },
     {
         name: 'Brooklyn Pizza Crew',
-        image: 'https://brooklynpizzacrew.com/wp-content/themes/bushwick-design%202/image/site-logo-white.png',
+        image: 'https://i.ibb.co/f122dfC/bkpizza.png',
         phone: '718-363-1122',
         address: '758 Nostrand Ave., Brooklyn, NY 11216',
         
