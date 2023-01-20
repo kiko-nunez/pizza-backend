@@ -32,11 +32,16 @@ const Menu = require('./models/menu');
 
 // Controllers //
 const userController = require('./controllers/user');
-app.use('/', userController);
+app.use('/user', userController);
 const shopController = require('./controllers/shop');
 app.use('/shop', shopController)
 const menuController = require('./controllers/menu');
 app.use('/menu', menuController)
+
+// create a test route //
+app.get("/", (req, res) => {
+    res.send("hello world");
+});
 
 // Listening 
 app.listen(PORT, () => console.log('express is listening on:', PORT));
