@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 // Shop Schema
 const shopSchema = Schema({
-    shop_name: String,
-    img: String,
+    name: String,
+    image: String,
     phone: String,
     address: String,
     // not sure if this needs to be more detailed for api

@@ -28,10 +28,12 @@ menuRouter.get("/", async (req, res) => {
 });
 
 // menu CREATE ROUTE
-menuRouter.post("/menu", async (req, res) => {
+menuRouter.post("/", async (req, res) => {
     try {
         // send all people
-        res.json(await Menu.create(req.body));
+        const menu = await Menu.create(req.body);
+
+        res.json(menu);
     } catch (error) {
         //send error
         res.status(400).json(error);
@@ -39,7 +41,7 @@ menuRouter.post("/menu", async (req, res) => {
 });
 
 // menu DELETE ROUTE
-menuRouter.delete("/menu/:id", async (req, res) => {
+menuRouter.delete("menu/:id", async (req, res) => {
     try {
         // send all people
         res.json(await Menu.findByIdAndRemove(req.params.id));
@@ -50,7 +52,7 @@ menuRouter.delete("/menu/:id", async (req, res) => {
 });
 
 // menu UPDATE ROUTE
-menuRouter.put("/menu/:id", async (req, res) => {
+menuRouter.put("/:id", async (req, res) => {
     try {
         //send all people
         res.json(

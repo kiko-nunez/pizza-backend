@@ -11,7 +11,7 @@ userRouter.get("/", (req, res) => {
 });
 
 // User INDEX ROUTE
-userRouter.get("/user", async (req, res) => {
+userRouter.get("/", async (req, res) => {
     try {
         // send all people
         res.json(await User.find({}));
@@ -22,7 +22,7 @@ userRouter.get("/user", async (req, res) => {
 });
 
 // User CREATE ROUTE
-userRouter.post("/user", async (req, res) => {
+userRouter.post("/", async (req, res) => {
     try {
         // send all people
         res.json(await User.create(req.body));
@@ -33,7 +33,7 @@ userRouter.post("/user", async (req, res) => {
 });
 
 // User DELETE ROUTE
-userRouter.delete("/user/:id", async (req, res) => {
+userRouter.delete("/:id", async (req, res) => {
     try {
         // send all people
         res.json(await User.findByIdAndRemove(req.params.id));
@@ -44,7 +44,7 @@ userRouter.delete("/user/:id", async (req, res) => {
 });
 
 // User UPDATE ROUTE
-userRouter.put("/user/:id", async (req, res) => {
+userRouter.put("/:id", async (req, res) => {
     try {
         //send all people
         res.json(
