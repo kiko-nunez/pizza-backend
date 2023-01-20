@@ -1,4 +1,4 @@
-// Seed data
+// Seed shop data!
 module.exports = [
     {
         name: 'Joes Pizza',
