@@ -41,7 +41,7 @@ menuRouter.post("/", async (req, res) => {
 });
 
 // menu DELETE ROUTE
-menuRouter.delete("menu/:id", async (req, res) => {
+menuRouter.delete("/:id", async (req, res) => {
     try {
         // send all people
         res.json(await Menu.findByIdAndRemove(req.params.id));
