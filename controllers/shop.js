@@ -63,5 +63,5 @@ shopRouter.put("/shop/:id", async (req, res) => {
 });
 
 
-// Export User Router
+// Export Shop Router
 module.exports = shopRouter;

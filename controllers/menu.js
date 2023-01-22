@@ -65,5 +65,5 @@ menuRouter.put("/:id", async (req, res) => {
 });
 
 
-// Export User Router
+// Export Menu Router
 module.exports = menuRouter;
