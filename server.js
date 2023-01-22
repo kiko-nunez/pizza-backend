@@ -30,6 +30,7 @@ app.use(express.json()); // parse json bodies
 const Customer = require('./models/user');
 const Menu = require('./models/menu');
 
+
 // Controllers //
 const userController = require('./controllers/user');
 app.use('/user', userController);
@@ -37,6 +38,8 @@ const shopController = require('./controllers/shop');
 app.use('/shop', shopController)
 const menuController = require('./controllers/menu');
 app.use('/menu', menuController)
+const cartController = require('./controllers/cart');
+app.use('/cart', cartController)
 
 // create a test route //
 app.get("/", (req, res) => {
