@@ -30,7 +30,7 @@ module.exports = [
     },
     {
         name: 'Anna Maria Pizza & Pasta',
-        image: 'https://i.ibb.co/d4DcWPW/annamaria.jpg',
+        image: 'https://i.imgur.com/xxDUyHE.png',
         phone: '718-599-4550',
         address: '179 Bedford Ave, Brooklyn, NY 11211',
         

@@ -5,11 +5,6 @@ const User = require('../models/user.js');
 
 // Routes //
 
-// create a test route //
-userRouter.get("/", (req, res) => {
-    res.send("hello world");
-});
-
 // User INDEX ROUTE
 userRouter.get("/", async (req, res) => {
     try {
