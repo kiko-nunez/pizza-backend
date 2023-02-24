@@ -42,7 +42,7 @@ CheesUs is a food delivery app specifically designed to give customers a list of
 ***
 ## Deployed Website
 
-[Live Site](https://cheezus.netlify.app/) to visit deployed app! 
+[Live Site: ](https://cheezus.netlify.app/) to visit deployed app! 
 ***
 ## Future Enhancements
 - Adding a separate login for shop owners.
