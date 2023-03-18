@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const express = require("express");
 require('dotenv').config();
 
-const {PORT = 4000, MONGODB_URL} = process.env;
+const { PORT = 4000, MONGODB_URL } = process.env;
 
 const app = express();
 
@@ -19,10 +19,12 @@ mongoose.connection
 .on('close', () => console.log("You are disconnected to mongoose"))
 .on('error', () => console.log(error));
 
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 
 // Middleware //
-app.use(cors()); // to prevent cors errors, open access to all origins
+app.use(cors({
+    origin: ['https://cheezus.netlify.app']
+})); // to prevent cors errors, open access to all origins
 app.use(morgan("dev")); // logging
 app.use(express.json()); // parse json bodies 
 
